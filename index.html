@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sonali Furniture — Modern Indian Furniture | Buy, Rent & Custom</title>
+  <meta name="description"
+    content="Shop handcrafted solid Sheesham and Teak wood furniture for everyday living. Buy or rent solid wood sofas, wooden palang beds, study tables, dining tables, and custom furniture with free doorstep installation.">
+  <meta name="keywords"
+    content="Sonali Furniture, solid wood furniture, buy furniture online, furniture on rent, custom furniture, Sheesham wood palang, wooden sofa, study table, dining table, Indian furniture">
+
+  <!-- Roboto Font Only (Strict Design System Rule) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400&display=swap"
+    rel="stylesheet">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/views.css">
+</head>
+
+<body>
+
+  <!-- Top Utility Bar (Friendly Hinglish & Quick Assistance) -->
+  <div class="topbar">
+    <div class="container topbar-content">
+      <div class="topbar-hint">
+        <span>Need help choosing?</span>
+        <span class="topbar-hinglish">Samajh nahi aa raha kaunsa size sahi rahega?</span>
+        <span>Talk to us:</span>
+        <a href="tel:+919504326798" style="color: #FFFFFF; font-weight: 500;">+91 95043 26798</a>
+      </div>
+      <div class="topbar-links">
+        <a href="#track-order">📍 Track Order</a>
+        <a href="#custom">📐 Custom Furniture</a>
+        <a href="#faq">❓ Help & FAQs</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Site Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <!-- Mobile Hamburger Button -->
+      <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Open mobile menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+
+      <!-- Brand Logo -->
+      <a href="#home" class="brand-logo" aria-label="Sonali Furniture Home">
+        <img src="assets/images/logo/logo-header.png" alt="Sonali Furniture" class="site-logo-img">
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <nav class="main-nav" aria-label="Main Navigation">
+        <a href="#home" class="nav-link">Home</a>
+        <a href="#shop" class="nav-link">Shop</a>
+        <a href="#rent" class="nav-link">Furniture on Rent</a>
+        <a href="#custom" class="nav-link">Custom Furniture</a>
+        <a href="#about" class="nav-link">About</a>
+      </nav>
+
+      <!-- Right Header Action Icons -->
+      <div class="header-actions">
+        <!-- Search Trigger -->
+        <button class="header-action-btn" id="search-trigger" aria-label="Search Furniture">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+        </button>
+
+        <!-- Wishlist -->
+        <a href="#account" onclick="setTimeout(() => App.switchAccountTab('wishlist'), 50)" class="header-action-btn"
+          aria-label="View Wishlist">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path
+              d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+            </path>
+          </svg>
+          <span class="action-badge wishlist-count-badge" style="display: none;">0</span>
+        </a>
+
+        <!-- Cart -->
+        <a href="#cart" class="header-action-btn" aria-label="View Shopping Cart">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <path d="M16 10a4 4 0 0 1-8 0"></path>
+          </svg>
+          <span class="action-badge cart-count-badge" style="display: none;">0</span>
+        </a>
+
+        <!-- Account -->
+        <a href="#account" class="header-action-btn" aria-label="My Account">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+            <circle cx="12" cy="7" r="4"></circle>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-nav-drawer" id="mobile-nav-drawer">
+    <div class="mobile-nav-panel">
+      <div class="mobile-nav-header">
+        <a href="#home" class="brand-logo" aria-label="Sonali Furniture Home">
+          <img src="assets/images/logo/logo-header.png" alt="Sonali Furniture" class="site-logo-img mobile-logo-img">
+        </a>
+        <button id="mobile-close-btn" style="font-size: 1.25rem; padding: 4px; color: var(--color-primary-dark);"
+          aria-label="Close menu">✕</button>
+      </div>
+
+      <div class="mobile-nav-links">
+        <a href="#home">Home</a>
+        <a href="#shop">Shop All Furniture</a>
+        <a href="#rent">Furniture on Rent</a>
+        <a href="#custom">Custom Furniture</a>
+        <a href="#track-order">Track Your Order</a>
+        <a href="#account">My Account & Wishlist</a>
+        <a href="#about">About Sonali</a>
+        <a href="#contact">Contact & Store</a>
+        <a href="#faq">Help & FAQs</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Live Search Overlay Modal -->
+  <div class="search-overlay" id="search-overlay">
+    <div class="search-box-modal">
+      <div class="search-input-wrapper">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+          style="color: var(--color-primary);">
+          <circle cx="11" cy="11" r="8"></circle>
+          <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+        </svg>
+        <input type="text" id="search-input" class="search-input-field"
+          placeholder="Search sofa, study table, wooden palang, mandir..." autocomplete="off">
+        <button class="search-close-btn" id="search-close" aria-label="Close search">✕</button>
+      </div>
+
+      <div class="search-suggestions" id="search-results">
+        <!-- Rendered dynamically by App.renderSearchSuggestions -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Main View Container (Client-Side Routed) -->
+  <main id="app-root">
+    <!-- Views rendered dynamically by App.handleRoute() -->
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="footer-top">
+      <div class="container footer-grid">
+        <!-- Brand Summary -->
+        <div class="footer-brand">
+          <a href="#home" class="brand-logo" aria-label="Sonali Furniture Home">
+            <img src="assets/images/logo/logo-footer.png" alt="Sonali Furniture" class="site-logo-img footer-logo-img">
+          </a>
+          <p class="footer-desc">
+            Thoughtfully designed solid Sheesham and Teak wood furniture for real Indian homes. Practical craftsmanship,
+            honest pricing, and flexible Buy or Rent options.
+          </p>
+          <div class="footer-contact-item">
+            <span>📍</span>
+            <span>923G+35G, Sonali Furniture, Pali road, near karpuri chowk, Masaurhi, Bihar 804452</span>
+          </div>
+          <div class="footer-contact-item">
+            <span>📞</span>
+            <a href="tel:+919504326798" style="color: #FFFFFF;">+91 95043 26798 (Mon–Sun, 9 AM – 8 PM)</a>
+          </div>
+        </div>
+
+        <!-- Column 1: Shop -->
+        <div>
+          <h3 class="footer-column-title">Shop</h3>
+          <ul class="footer-nav-list">
+            <li><a href="#shop">All Furniture</a></li>
+            <li><a href="#shop?category=Sofa">Sofas</a></li>
+            <li><a href="#shop?category=Wooden%20Palang">Wooden Palang Beds</a></li>
+            <li><a href="#shop?category=Study%20Table">Study Tables</a></li>
+            <li><a href="#shop?category=Dining%20Table">Dining Tables</a></li>
+            <li><a href="#shop?category=Office%20Table">Office Desks</a></li>
+            <li><a href="#shop?category=Shoe%20Rake">Shoe Racks</a></li>
+            <li><a href="#shop?category=Temple">Pooja Mandir</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 2: Services -->
+        <div>
+          <h3 class="footer-column-title">Services</h3>
+          <ul class="footer-nav-list">
+            <li><a href="#rent">Furniture on Rent</a></li>
+            <li><a href="#custom">Custom Furniture</a></li>
+            <li><a href="#track-order">Free Delivery & Assembly</a></li>
+            <li><a href="#about">Workshop Craftsmanship</a></li>
+            <li><a href="#rent">Free City Relocation</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Help -->
+        <div>
+          <h3 class="footer-column-title">Help</h3>
+          <ul class="footer-nav-list">
+            <li><a href="#contact">Contact Support</a></li>
+            <li><a href="#track-order">Track Your Order</a></li>
+            <li><a href="#faq">7-Day Return Policy</a></li>
+            <li><a href="#faq">5-Year Warranty</a></li>
+            <li><a href="#faq">Frequently Asked Questions</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 4: Company -->
+        <div>
+          <h3 class="footer-column-title">Company</h3>
+          <ul class="footer-nav-list">
+            <li><a href="#about">About Sonali</a></li>
+            <li><a href="#contact">Store Location</a></li>
+            <li><a href="#faq">Terms of Service</a></li>
+            <li><a href="#faq">Privacy Policy</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer Bottom Legal & Trust -->
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <div>
+          © 2026 Sonali Furniture. All rights reserved. Crafted with care for Indian homes.
+        </div>
+        <div class="footer-trust-notes">
+          <span>✓ 100% Solid Seasoned Wood</span>
+          <span>✓ Free White-Glove Installation</span>
+          <span>✓ Transparent Pricing</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast Notification Container -->
+  <div class="toast-container" id="toast-container"></div>
+
+  <!-- Scripts -->
+  <script src="js/data.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/app.js"></script>
+</body>
+
+</html>
